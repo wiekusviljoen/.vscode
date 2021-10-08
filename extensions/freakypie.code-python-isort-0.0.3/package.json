@@ -1,0 +1,43 @@
+{
+	"name": "code-python-isort",
+	"displayName": "code-python-isort",
+	"description": "use isort to sort python imports",
+	"version": "0.0.3",
+	"publisher": "freakypie",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.isort"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.isort",
+				"title": "isort: Sort python imports"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"eslint": "^3.6.0",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "fa436a75-9f70-4f5e-8fbf-919ac4131d38",
+		"publisherId": "86333dbe-49e5-4add-8d5f-d0b19c869b0c",
+		"publisherDisplayName": "freakypie",
+		"installedTimestamp": 1632326710122
+	}
+}
